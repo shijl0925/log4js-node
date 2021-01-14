@@ -7,7 +7,6 @@ step:
     stage: package
     script:
         - npm install
-        - npm test
     is_pkg: true
     CompressType: gz
     CompressFolder: lib
