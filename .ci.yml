@@ -1,0 +1,13 @@
+package: log4js-node
+type: nodejs
+stages:
+  - package
+
+step:
+    stage: package
+    script:
+        - npm install
+        - npm run codecov
+    is_pkg: true
+    CompressType: gz
+    CompressFolder: lib
