@@ -7,6 +7,6 @@ step:
     stage: package
     script:
         - npm install
-    is_pkg: true
-    CompressType: gz
-    CompressFolder: lib
+    is_package: true
+    ArchiveType: gz
+    ArchiveFolder: lib
